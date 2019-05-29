@@ -1,6 +1,15 @@
 .wrapper {
     width: 80%;
-    grid-gap: 20fx;
+    grid-gap: 20px;
     grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+
+}
+
+.cell {
+    height: 250px;
+    justify-content: center;
+    background-color: black;
+    color: white;
     
 }
