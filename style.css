@@ -1,0 +1,6 @@
+.wrapper {
+    width: 80%;
+    grid-gap: 20fx;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
