@@ -1,15 +1,33 @@
+h1 {
+    text-align: center;
+}
+
 .wrapper {
+    display: grid;
     width: 80%;
     grid-gap: 20px;
     grid-template-columns: repeat(5, 1fr);
     margin: 0 auto;
-
 }
 
 .cell {
+    display: flex;
     height: 250px;
+    align-items: center;
     justify-content: center;
-    background-color: black;
-    color: white;
-    
+    background-color: blue;
+    color: yellow;
+    font: bold;
+}
+
+@media only screen and (max-width: 900px) {
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
